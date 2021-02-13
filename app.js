@@ -10,6 +10,9 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) {
   //eslint-disable-line
+  let sum = a + b;
+  let arr = [sum, "The sum of " + a + " and " + b + " is " + sum + "."];
+  return arr;
 }
 
 // Here is the test for sum(); uncomment it to run it
