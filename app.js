@@ -31,6 +31,9 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) {
   //eslint-disable-line
+  let multiply = a * b;
+  let arr = [multiply, "The product of " + a + " and " + b + " is " + multiply + "."];
+  return arr;
 }
 
 // Here is the test for multiply(); uncomment it to run it
