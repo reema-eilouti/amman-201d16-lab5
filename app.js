@@ -136,6 +136,30 @@ let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) {
   //eslint-disable-line
+  var result = 1;
+  let extractArr = [];
+  let printArray = [];
+
+  loop:for (let i = 0; i < dynamicArray.length; i+2){
+    if (i >= dynamicArray.length-1){
+      result = result * dynamicArray[i];
+      console.log(result);
+      break loop;
+    } else {
+      extractArr = multiply(dynamicArray[i], dynamicArray[i+1]);
+      result = result * extractArr[0];
+      console.log(result);
+    }
+  }
+
+  // for (let j = 0; j < dynamicArray.length; j++){
+  //   printArray.push(dynamicArray[i], ",");
+  // }
+  // printArray.pop();
+
+  // let arr = [result, "The numbers " + printArray + " have a product of " + result + "."]
+
+  return result;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
