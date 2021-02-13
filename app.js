@@ -55,6 +55,10 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) {
   //eslint-disable-line
+  let sum = a + b + c;
+  let multiply = a * b * c;
+  let arr = [sum, multiply,  a + " and " + b + " and " + c + " sum to " + sum + ".", "The product of " + a  + " and " + b + " and " + c + " is " + multiply + "."];
+  return arr;
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
